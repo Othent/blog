@@ -1,40 +1,55 @@
 import { useState, useEffect } from 'react';
 import * as Styled from './styles';
-import { Othent } from 'othent';
 import blogEntries from './blogEntries';
+
 
 const Blog = () => {
 
-  const sortedBlogEntries = blogEntries.sort((a, b) => b.id - a.id);
+  const [selectedCategory, setSelectedCategory] = useState('View All');
+
+  const filteredBlogEntries = selectedCategory === 'View All'
+    ? blogEntries
+    : blogEntries.filter(entry => entry.category === selectedCategory);
+
+  const sortedBlogEntries = filteredBlogEntries.sort((a, b) => b.id - a.id);
   const mainBlogEntry = sortedBlogEntries[0];
-  const gridBlogEntries = sortedBlogEntries.slice(1, 7);
+  const gridBlogEntries = selectedCategory === 'View All'
+  ? sortedBlogEntries.slice(1)
+  : sortedBlogEntries;
+
+
 
   
   return (
     <Styled.MainWrapper>
       <Styled.heroContainer>
 
-        <Styled.BlogMenu>
-          <Styled.BlogMenuButton>View All</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>Announcements</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>Thought Leadership</Styled.BlogMenuButton>
+      <Styled.BlogMenu>
+          <Styled.BlogMenuButton secondary={selectedCategory !== 'View All'}
+           onClick={() => setSelectedCategory('View All')}>View All</Styled.BlogMenuButton>
+          <Styled.BlogMenuButton secondary={selectedCategory !== 'Announcements'}
+           onClick={() => setSelectedCategory('Announcements')}>Announcements</Styled.BlogMenuButton>
+          <Styled.BlogMenuButton secondary={selectedCategory !== 'Technology'}
+           onClick={() => setSelectedCategory('Technology')}>Technology</Styled.BlogMenuButton>
         </Styled.BlogMenu>
 
 
-        <Styled.HeroBlog key={mainBlogEntry.id}>
-          <img src={mainBlogEntry.image} alt="Blog" />
-          <Styled.MainBlogContent>
-            <div className='header-content'>
-              <p className='category'>{mainBlogEntry.category}</p>
-              <p>{mainBlogEntry.duration}</p>
-            </div>
-            <h1>{mainBlogEntry.title}</h1>
-            <p>{mainBlogEntry.content}</p>
-            <Styled.BlogButton onClick={() => window.location.href = mainBlogEntry.link}>
-              Read More
-            </Styled.BlogButton>
-          </Styled.MainBlogContent>
-        </Styled.HeroBlog>
+        {selectedCategory === 'View All' && (
+          <Styled.HeroBlog key={mainBlogEntry.id}>
+            <img src={mainBlogEntry.image} alt="Blog" />
+            <Styled.MainBlogContent>
+              <div className='header-content'>
+                <p className='category'>{mainBlogEntry.category}</p>
+                <p>{mainBlogEntry.duration}</p>
+              </div>
+              <h1>{mainBlogEntry.title}</h1>
+              <p>{mainBlogEntry.teaserContent}</p>
+              <Styled.MainBlogButton onClick={() => window.location.href = '' + mainBlogEntry.link}>
+                Read More
+              </Styled.MainBlogButton>
+            </Styled.MainBlogContent>
+          </Styled.HeroBlog>
+        )}
 
 
         <Styled.Subsection>
@@ -48,10 +63,10 @@ const Blog = () => {
                   <p>{blogPost.duration}</p>
                 </div>
                 <h2>{blogPost.title}</h2>
-                <p>{blogPost.content}</p>
-                <Styled.BlogButton onClick={() => window.location.href = blogPost.link}>
+                <p>{blogPost.teaserContent}</p>
+                <Styled.SubBlogButton secondary onClick={() => window.location.href = blogPost.link}>
                   Read More
-                </Styled.BlogButton>
+                </Styled.SubBlogButton>
               </Styled.SubBlogContent>
             </Styled.SubsectionBlog>
 
@@ -61,7 +76,9 @@ const Blog = () => {
 
 
         <Styled.BlogMenuFooter>
+          <Styled.BlogMenuFooterButton secondary>&lt;</Styled.BlogMenuFooterButton>
           <Styled.BlogMenuFooterButton>1</Styled.BlogMenuFooterButton>
+          <Styled.BlogMenuFooterButton secondary>&gt;</Styled.BlogMenuFooterButton>
         </Styled.BlogMenuFooter>
 
 
