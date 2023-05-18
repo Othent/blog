@@ -1,16 +1,13 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
 import CallToAction from '../components/CallToAction';
-import Blog from '../components/Blog';
+import BlogPostPage from '../components/Blog/[id]';
 import Footer from '../components/Footer';
 import { SectionOne } from '../components/sharedstyles';
 
+const BlogPost: React.FC = () => {
 
-export default function Home() {
-  useEffect(() => console.log('You should consider working with us, email hello@othent.io'), []);
-
-  
   return (
+
     <SectionOne>
       <Head>
         <title>Othent Blog - Merging Web2 to Web3 user logins with a familiar and simple interface.</title>
@@ -31,11 +28,13 @@ export default function Home() {
         <meta property="og:site_name" content="Othent"></meta>
       </Head>
 
-      <Blog />
+      <BlogPostPage/>
 
       <CallToAction />
 
       <Footer />
     </SectionOne>
-  );
-}
+  )
+};
+
+export default BlogPost;

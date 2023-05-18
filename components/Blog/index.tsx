@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as Styled from './styles';
 import blogEntries from './blogEntries';
-import { Link } from 'react-router-dom';
 
 
 const Blog = () => {
@@ -17,8 +16,6 @@ const Blog = () => {
   const gridBlogEntries = selectedCategory === 'View All'
   ? sortedBlogEntries.slice(1)
   : sortedBlogEntries;
-
-
 
   
   return (
@@ -45,9 +42,9 @@ const Blog = () => {
               </div>
               <h1>{mainBlogEntry.title}</h1>
               <p>{mainBlogEntry.teaserContent}</p>
-              <Link to={'/blog/' + mainBlogEntry.id}>
-              <Styled.MainBlogButton>Read More</Styled.MainBlogButton>
-            </Link>
+              <Styled.MainBlogButton onClick={() => window.location.href = '/' + mainBlogEntry.id}>
+                Read More
+              </Styled.MainBlogButton>
             </Styled.MainBlogContent>
           </Styled.HeroBlog>
         )}
@@ -65,7 +62,7 @@ const Blog = () => {
                 </div>
                 <h2>{blogPost.title}</h2>
                 <p>{blogPost.teaserContent}</p>
-                <Styled.SubBlogButton secondary onClick={() => window.location.href = 'blog' + blogPost.id}>
+                <Styled.SubBlogButton secondary onClick={() => window.location.href = '/' + blogPost.id}>
                   Read More
                 </Styled.SubBlogButton>
               </Styled.SubBlogContent>

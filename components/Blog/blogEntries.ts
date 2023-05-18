@@ -2,7 +2,6 @@ const blogEntries = [
 
     {
         id: 1,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Technology',
         duration: '3 min read',
@@ -13,7 +12,6 @@ const blogEntries = [
       },
       {
         id: 2,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Technology',
         duration: '3 min read',
@@ -24,7 +22,6 @@ const blogEntries = [
       },
       {
         id: 3,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Technology',
         duration: '3 min read',
@@ -35,7 +32,6 @@ const blogEntries = [
       },
       {
         id: 4,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Announcements',
         duration: '3 min read',
@@ -46,7 +42,6 @@ const blogEntries = [
       },
       {
         id: 5,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Announcements',
         duration: '3 min read',
@@ -57,7 +52,6 @@ const blogEntries = [
       },
       {
         id: 6,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Announcements',
         duration: '3 min read',
@@ -68,7 +62,6 @@ const blogEntries = [
       },
       {
         id: 7,
-        link: 'blog-title',
         image: '/blog/blog1/favicon.svg',
         category: 'Announcements',
         duration: '3 min read',
