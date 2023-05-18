@@ -231,8 +231,8 @@ export const BlogPost = styled.div`
   width: 80%;
   margin-top: 2rem;
   padding: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
   gap: 2rem;
   border-radius: 12px;
   margin-bottom: 2rem;
@@ -241,7 +241,7 @@ export const BlogPost = styled.div`
     width: 90%;
     padding: 5%;
     margin-top: 4rem;
-    img {
+    .blog-img {
       width: 100%;
     }
   }
@@ -261,7 +261,7 @@ export const BlogPost = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #F6F9FF;
+    gap: 1rem;
 
     .header {
       display: flex;
@@ -273,6 +273,7 @@ export const BlogPost = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
 
         .right {
           display: flex;
@@ -295,10 +296,11 @@ export const BlogPost = styled.div`
 `;
 export const AuthorImg = styled.img`
   border-radius: 50%;
-  height: 100%;
+  height: 50px;
+  width: 50px;
 `
 export const AuthorTwitter = styled.img`
-  height: 100%;
+  width: 1rem;
 `
 
 

@@ -50,7 +50,7 @@ const BlogPostPage = () => {
             <b>By: Lorimer Jenkins {blogPost.date}</b>
           </Styled.BlogHeader>
 
-          <img src={blogPost.image} alt={blogPost.title} />
+          <img className='blog-img' src={blogPost.image} alt={blogPost.title} />
 
           <p className='content'>{blogPost.content}</p>
 
@@ -58,18 +58,18 @@ const BlogPostPage = () => {
           <div className='about-author'>
             <div className='header'>
               <div className='left'>
-                <Styled.AuthorImg src="../../public/lorimer.jpeg" alt="Lorimer Jenkins" />
+                <Styled.AuthorImg src="/lorimer.jpeg" alt="Lorimer Jenkins" />
                 <div className='right'>
                   <b>By Lorimer Jenkins</b>
                   <p>Founder, Othent</p>
                 </div>
               </div>
               <a href="https://twitter.com/lorimer_jenkins" target="_blank">
-                <Styled.AuthorTwitter src="../../public/twitter.png" alt="Twitter" />
+                <Styled.AuthorTwitter src="/twitter.png" alt="Twitter" />
               </a>
             </div>
             <p className='footer'>
-              Lorimer's favorite color of balloon is red 
+              Southern nights Have you ever felt a Southern night? Free as a breeze Not to mention the trees Whistlin tunes that you know and love so Southern nights Just as good even when you close your eyes...
             </p>
           </div>
 
