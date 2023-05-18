@@ -38,6 +38,9 @@ export const BlogMenu = styled.div`
   align-items: center;
   gap: 0.5rem;
   width: 100%;
+  @media (max-width: 768px) {
+    margin-top: 4rem;
+  }
 `;
 export const BlogMenuButton = styled(Button)`
   font-size: 0.6rem;
@@ -48,21 +51,23 @@ export const BlogMenuButton = styled(Button)`
 
 
 export const HeroBlog = styled.div`
-  height: fit-content;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 2rem;
+
   img {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    width: 50%; 
+    width: 50%;
     object-fit: cover;
   }
+
   @media (max-width: 768px) {
     flex-direction: column;
+
     img {
-      width: 100%; 
+      width: 100%;
       border-radius: 8px;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -72,9 +77,7 @@ export const HeroBlog = styled.div`
   }
 `;
 
-export const MainBlogContent = styled.div `
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+export const MainBlogContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: left;
@@ -82,15 +85,17 @@ export const MainBlogContent = styled.div `
   padding: 2.5rem;
   background-color: white;
   gap: 1.5rem;
-  width: 50%; 
+  width: 50%;
+
+
   @media (max-width: 768px) {
-    border-radius: 8px;
-    width: 100%; 
+    width: 100%;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
+
   .header-content {
     display: flex;
     justify-content: center;
@@ -98,12 +103,21 @@ export const MainBlogContent = styled.div `
     gap: 0.5rem;
     width: fit-content;
     font-size: 0.5rem;
-  } 
+  }
+
   .category {
     background: black;
     color: white;
     padding: 5px;
     font-size: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 `;
 export const MainBlogButton = styled(Button)`
