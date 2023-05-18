@@ -245,7 +245,63 @@ export const BlogPost = styled.div`
       width: 100%;
     }
   }
+
+
+  .content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 0.1px solid black;
+    border-bottom: 0.1px solid black;
+    width: 100%;
+  }
+
+  .about-author {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6F9FF;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .right {
+          display: flex;
+          justify-content: center;
+          align-items: left;
+          flex-direction: column;
+        }
+      }
+
+      .right {
+        height: 100%;
+      }
+    }
+
+    .footer {
+      width: 100%;
+      text-align: left;
+    }
+  }
 `;
+export const AuthorImg = styled.img`
+  border-radius: 50%;
+  height: 100%;
+`
+export const AuthorTwitter = styled.img`
+  height: 100%;
+`
+
+
 
 export const BlogHeader = styled.div`
   display: flex;
@@ -281,6 +337,11 @@ export const BlogHeader = styled.div`
   }
 `;
 
+export const RecommendedBlogsTitle = styled.h1 `
+  width: 80%;
+  text-align: left;
+  margin-bottom: 1rem;
+`;
 export const RecommendedBlogs = styled.div`
   display: flex;
   justify-content: center;

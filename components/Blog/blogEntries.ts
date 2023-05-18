@@ -1,5 +1,4 @@
 const blogEntries = [
-
     {
         id: 1,
         image: '/blog/blog1/favicon.svg',

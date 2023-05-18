@@ -3,15 +3,28 @@ import { useRouter } from 'next/router';
 import * as Styled from './styles';
 import blogEntries from './blogEntries';
 
+
+
 const BlogPostPage = () => {
   const router = useRouter();
   const { id } = router.query;
   const blogPost = blogEntries.find((entry) => entry.id === Number(id));
 
 
-  // Function to get four random blog posts
+
   const getRandomBlogPosts = () => {
-    const randomBlogPosts = blogEntries.slice(0, 3);
+    const randomBlogPosts = [];
+    const totalPosts = blogEntries.length;
+    while (randomBlogPosts.length < 3) {
+      const randomIndex = Math.floor(Math.random() * totalPosts);
+      const randomPost = blogEntries[randomIndex];
+      if (
+        !randomBlogPosts.includes(randomPost) &&
+        randomPost.id !== Number(id)
+      ) {
+        randomBlogPosts.push(randomPost);
+      }
+    }
     return randomBlogPosts;
   };
 
@@ -39,12 +52,31 @@ const BlogPostPage = () => {
 
           <img src={blogPost.image} alt={blogPost.title} />
 
-          <p>{blogPost.content}</p>
+          <p className='content'>{blogPost.content}</p>
+
+
+          <div className='about-author'>
+            <div className='header'>
+              <div className='left'>
+                <Styled.AuthorImg src="../../public/lorimer.jpeg" alt="Lorimer Jenkins" />
+                <div className='right'>
+                  <b>By Lorimer Jenkins</b>
+                  <p>Founder, Othent</p>
+                </div>
+              </div>
+              <a href="https://twitter.com/lorimer_jenkins" target="_blank">
+                <Styled.AuthorTwitter src="../../public/twitter.png" alt="Twitter" />
+              </a>
+            </div>
+            <p className='footer'>
+              Lorimer's favorite color of balloon is red 
+            </p>
+          </div>
+
         </Styled.BlogPost>
       ) : (
         <p>Blog post not found.</p>
       )}
-
 
       <Styled.RecommendedBlogs>
         {randomBlogPosts.map((blogPost) => (
