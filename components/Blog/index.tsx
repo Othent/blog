@@ -1,57 +1,72 @@
 import { useState, useEffect } from 'react';
 import * as Styled from './styles';
 import { Othent } from 'othent';
-
-
+import blogEntries from './blogEntries';
 
 const Blog = () => {
 
+  const sortedBlogEntries = blogEntries.sort((a, b) => b.id - a.id);
+  const mainBlogEntry = sortedBlogEntries[0];
+  const gridBlogEntries = sortedBlogEntries.slice(1, 7);
 
-
+  
   return (
     <Styled.MainWrapper>
-
-
-
-
       <Styled.heroContainer>
 
-        <Styled.HeaderText>Blog</Styled.HeaderText>
-        {/* <Styled.HeaderText2>Learn about cryptocurrency, NFTs, and blockchain, discover our latest product updates, partnership announcements, user stories, and more.</Styled.HeaderText2> */}
         <Styled.BlogMenu>
           <Styled.BlogMenuButton>View All</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>Releases</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>Thought Leadership</Styled.BlogMenuButton>
           <Styled.BlogMenuButton>Announcements</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>People</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>Engineering</Styled.BlogMenuButton>
-          <Styled.BlogMenuButton>NFT</Styled.BlogMenuButton>
+          <Styled.BlogMenuButton>Thought Leadership</Styled.BlogMenuButton>
         </Styled.BlogMenu>
 
-        <Styled.HeroBlog>
-          <img src="/blog/blog1/favicon.svg" alt="Blog" />
-          <div className='content'>
+
+        <Styled.HeroBlog key={mainBlogEntry.id}>
+          <img src={mainBlogEntry.image} alt="Blog" />
+          <Styled.MainBlogContent>
             <div className='header-content'>
-              <p className='category'>Crypto</p>
-              <p>5 min read</p>
+              <p className='category'>{mainBlogEntry.category}</p>
+              <p>{mainBlogEntry.duration}</p>
             </div>
-            <h1>Your passport to the web3 economy</h1>
-            <p>
-              If you’ve read this far and you’re wondering what “web3” is exactly, this is one of those need-to-knows, and it’s pretty simple. We’ll explain more below, but in short web3 is the next era of the internet in which blockchain technology will play a central role.
-            </p>
-            <Styled.HeroBlogButton onClick={() => window.location.href = '/blog1'}>Read More</Styled.HeroBlogButton>
-          </div>
+            <h1>{mainBlogEntry.title}</h1>
+            <p>{mainBlogEntry.content}</p>
+            <Styled.BlogButton onClick={() => window.location.href = mainBlogEntry.link}>
+              Read More
+            </Styled.BlogButton>
+          </Styled.MainBlogContent>
         </Styled.HeroBlog>
 
 
+        <Styled.Subsection>
+          {gridBlogEntries.map(blogPost => (
+
+            <Styled.SubsectionBlog key={blogPost.id}>
+              <img src={blogPost.image} alt="Blog" />
+              <Styled.SubBlogContent>
+                <div className='header-content'>
+                  <p className='category'>{blogPost.category}</p>
+                  <p>{blogPost.duration}</p>
+                </div>
+                <h2>{blogPost.title}</h2>
+                <p>{blogPost.content}</p>
+                <Styled.BlogButton onClick={() => window.location.href = blogPost.link}>
+                  Read More
+                </Styled.BlogButton>
+              </Styled.SubBlogContent>
+            </Styled.SubsectionBlog>
+
+          ))}
+        </Styled.Subsection>
+
+
+
+        <Styled.BlogMenuFooter>
+          <Styled.BlogMenuFooterButton>1</Styled.BlogMenuFooterButton>
+        </Styled.BlogMenuFooter>
+
+
+
       </Styled.heroContainer>
-
-
-      
-
-
-
-
     </Styled.MainWrapper>
   );
 };
