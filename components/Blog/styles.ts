@@ -213,3 +213,84 @@ export const BlogMenuFooterButton = styled(Button)`
   font-size: 0.6rem;
 `;
 
+
+
+
+
+
+
+
+// individual blogs
+
+export const BlogPost = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 5%;
+    margin-top: 4rem;
+    img {
+      width: 100%;
+    }
+  }
+`;
+
+export const BlogHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 1rem;
+
+  .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    font-size: 0.8rem;
+  }
+  .category {
+    background: black;
+    color: white;
+    padding: 5px;
+    font-size: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+`;
+
+export const RecommendedBlogs = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5%;
+  }
+`;
