@@ -86,6 +86,8 @@ export const MainBlogContent = styled.div`
   background-color: white;
   gap: 1.5rem;
   width: 50%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 
 
   @media (max-width: 768px) {

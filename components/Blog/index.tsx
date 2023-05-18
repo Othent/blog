@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as Styled from './styles';
 import blogEntries from './blogEntries';
+import { Link } from 'react-router-dom';
 
 
 const Blog = () => {
@@ -44,9 +45,9 @@ const Blog = () => {
               </div>
               <h1>{mainBlogEntry.title}</h1>
               <p>{mainBlogEntry.teaserContent}</p>
-              <Styled.MainBlogButton onClick={() => window.location.href = 'blog' + mainBlogEntry.id}>
-                Read More
-              </Styled.MainBlogButton>
+              <Link to={'/blog/' + mainBlogEntry.id}>
+              <Styled.MainBlogButton>Read More</Styled.MainBlogButton>
+            </Link>
             </Styled.MainBlogContent>
           </Styled.HeroBlog>
         )}
