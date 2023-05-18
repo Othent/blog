@@ -5,6 +5,7 @@ import {
   SectionOne,
 } from '../components/sharedstyles';
 import { useEffect } from 'react';
+import CallToAction from '../components/CallToAction';
 
 export default function Home() {
   useEffect(() => console.log('You should consider working with us, email hello@othent.io'), []);
@@ -32,6 +33,7 @@ export default function Home() {
       </Head>
 
       <Blog />
+      <CallToAction />
 
       <Footer />
     </SectionOne>

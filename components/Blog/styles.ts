@@ -103,6 +103,7 @@ export const MainBlogContent = styled.div `
     background: black;
     color: white;
     padding: 5px;
+    font-size: 0.5rem;
   }
 `;
 export const MainBlogButton = styled(Button)`
@@ -169,6 +170,7 @@ export const SubBlogContent = styled.div `
     background: black;
     color: white;
     padding: 5px;
+    font-size: 0.5rem;
   }
 `;
 export const SubBlogButton = styled(Button)`

@@ -44,7 +44,7 @@ const Blog = () => {
               </div>
               <h1>{mainBlogEntry.title}</h1>
               <p>{mainBlogEntry.teaserContent}</p>
-              <Styled.MainBlogButton onClick={() => window.location.href = '' + mainBlogEntry.link}>
+              <Styled.MainBlogButton onClick={() => window.location.href = 'blog' + mainBlogEntry.id}>
                 Read More
               </Styled.MainBlogButton>
             </Styled.MainBlogContent>
@@ -64,7 +64,7 @@ const Blog = () => {
                 </div>
                 <h2>{blogPost.title}</h2>
                 <p>{blogPost.teaserContent}</p>
-                <Styled.SubBlogButton secondary onClick={() => window.location.href = blogPost.link}>
+                <Styled.SubBlogButton secondary onClick={() => window.location.href = 'blog' + blogPost.id}>
                   Read More
                 </Styled.SubBlogButton>
               </Styled.SubBlogContent>
