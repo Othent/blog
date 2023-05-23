@@ -108,7 +108,7 @@ export const MainBlogContent = styled.div`
   }
 
   .category {
-    background: black;
+    background: #2375ef;
     color: white;
     padding: 5px;
     font-size: 0.5rem;
@@ -183,7 +183,7 @@ export const SubBlogContent = styled.div `
     font-size: 0.5rem;
   } 
   .category {
-    background: black;
+    background: #2375ef;
     color: white;
     padding: 5px;
     font-size: 0.5rem;
@@ -321,7 +321,7 @@ export const BlogHeader = styled.div`
     font-size: 0.8rem;
   }
   .category {
-    background: black;
+    background: #2375ef;
     color: white;
     padding: 5px;
     font-size: 0.5rem;
