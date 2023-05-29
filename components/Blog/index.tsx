@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import * as Styled from './styles';
 import blogEntries from './blogEntries';
 
@@ -32,7 +32,7 @@ const Blog = () => {
 
         {selectedCategory === 'View All' && (
           <Styled.HeroBlog key={mainBlogEntry.id}>
-            <img src={mainBlogEntry.image} alt="Blog" />
+            <img src={mainBlogEntry.favicon} alt="Blog" />
             <Styled.MainBlogContent>
               <div className='header-content'>
                 <p className='category'>{mainBlogEntry.category}</p>
@@ -40,7 +40,7 @@ const Blog = () => {
               </div>
               <h1>{mainBlogEntry.title}</h1>
               <p>{mainBlogEntry.teaserContent}</p>
-              <Styled.MainBlogButton onClick={() => window.location.href = '/' + mainBlogEntry.id}>
+              <Styled.MainBlogButton onClick={() => window.location.href = '/' + mainBlogEntry.url}>
                 Read More
               </Styled.MainBlogButton>
             </Styled.MainBlogContent>
@@ -52,7 +52,7 @@ const Blog = () => {
           {gridBlogEntries.map(blogPost => (
 
             <Styled.SubsectionBlog key={blogPost.id}>
-              <img src={blogPost.image} alt="Blog" />
+              <img src={blogPost.favicon} alt={blogPost.title} />
               <Styled.SubBlogContent>
                 <div className='header-content'>
                   <p className='category'>{blogPost.category}</p>
@@ -60,7 +60,7 @@ const Blog = () => {
                 </div>
                 <h2>{blogPost.title}</h2>
                 <p>{blogPost.teaserContent}</p>
-                <Styled.SubBlogButton secondary onClick={() => window.location.href = '/' + blogPost.id}>
+                <Styled.SubBlogButton secondary onClick={() => window.location.href = '/' + blogPost.url}>
                   Read More
                 </Styled.SubBlogButton>
               </Styled.SubBlogContent>

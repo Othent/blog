@@ -2,25 +2,24 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import * as Styled from './styles';
 import blogEntries from './blogEntries';
-
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from "rehype-raw";
 
 
 const BlogPostPage = () => {
   const router = useRouter();
-  const { id } = router.query;
-  const blogPost = blogEntries.find((entry) => entry.id === Number(id));
-
-
+  const url = router.query.id;
+  const blogPost = blogEntries.find((entry) => entry.url === url);
 
   const getRandomBlogPosts = () => {
     const randomBlogPosts = [];
     const totalPosts = blogEntries.length;
-    while (randomBlogPosts.length < 3) {
+    while (randomBlogPosts.length < 3 && totalPosts >= 4) {
       const randomIndex = Math.floor(Math.random() * totalPosts);
       const randomPost = blogEntries[randomIndex];
       if (
         !randomBlogPosts.includes(randomPost) &&
-        randomPost.id !== Number(id)
+        randomPost.url !== url
       ) {
         randomBlogPosts.push(randomPost);
       }
@@ -50,10 +49,9 @@ const BlogPostPage = () => {
             <b>By: Lorimer Jenkins {blogPost.date}</b>
           </Styled.BlogHeader>
 
-          <img className='blog-img' src={blogPost.image} alt={blogPost.title} />
+          <img className='blog-img' src={blogPost.blogImg} alt={blogPost.title} />
 
-          <p className='content'>{blogPost.content}</p>
-
+          <ReactMarkdown rehypePlugins={[rehypeRaw]} className="content" children={blogPost.content} />
 
           <div className='about-author'>
             <div className='header'>
@@ -61,7 +59,7 @@ const BlogPostPage = () => {
                 <Styled.AuthorImg src="/lorimer.jpeg" alt="Lorimer Jenkins" />
                 <div className='right'>
                   <b>By Lorimer Jenkins</b>
-                  <p>Founder, Othent</p>
+                  <p>Founder Othent</p>
                 </div>
               </div>
               <a href="https://twitter.com/lorimer_jenkins" target="_blank">
@@ -69,35 +67,34 @@ const BlogPostPage = () => {
               </a>
             </div>
             <p className='footer'>
-              Southern nights Have you ever felt a Southern night? Free as a breeze Not to mention the trees Whistlin tunes that you know and love so Southern nights Just as good even when you close your eyes...
+              Lorimer Jenkins is the founder of Othent, a project bringing traditional authentication over to Web3 to lower the barrier entry to dApps and create stronger authentication services for Web3.
             </p>
           </div>
-
         </Styled.BlogPost>
       ) : (
         <p>Blog post not found.</p>
       )}
 
-      <Styled.RecommendedBlogs>
-        {randomBlogPosts.map((blogPost) => (
-          <Styled.SubsectionBlog key={blogPost.id}>
-            <img src={blogPost.image} alt="Blog" />
-            <Styled.SubBlogContent>
-              <div className='header-content'>
-                <p className='category'>{blogPost.category}</p>
-                <p>{blogPost.duration}</p>
-              </div>
-              <h2>{blogPost.title}</h2>
-              <p>{blogPost.teaserContent}</p>
-              <Styled.SubBlogButton secondary onClick={() => window.location.href = '/' + blogPost.id}>
-                Read More
-              </Styled.SubBlogButton>
-            </Styled.SubBlogContent>
-          </Styled.SubsectionBlog>
-        ))}
-      </Styled.RecommendedBlogs>
-
-
+      {randomBlogPosts.length === 3 && (
+        <Styled.RecommendedBlogs>
+          {randomBlogPosts.map((blogPost) => (
+            <Styled.SubsectionBlog key={blogPost.id}>
+              <img src={blogPost.image} alt="othent hero image" />
+              <Styled.SubBlogContent>
+                <div className='header-content'>
+                  <p className='category'>{blogPost.category}</p>
+                  <p>{blogPost.duration}</p>
+                </div>
+                <h2>{blogPost.title}</h2>
+                <p>{blogPost.teaserContent}</p>
+                <Styled.SubBlogButton secondary onClick={() => router.push(`/${blogPost.url}`)}>
+                  Read More
+                </Styled.SubBlogButton>
+              </Styled.SubBlogContent>
+            </Styled.SubsectionBlog>
+          ))}
+        </Styled.RecommendedBlogs>
+      )}
     </Styled.MainWrapper>
   );
 };

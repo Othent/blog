@@ -118,6 +118,10 @@ export const MainBlogContent = styled.div`
     font-size: 2rem;
   }
 
+  .content {
+    font-size: 0.8rem;
+  }
+
   p {
     font-size: 0.8rem;
   }
@@ -254,6 +258,20 @@ export const BlogPost = styled.div`
     border-bottom: 0.1px solid black;
     width: 100%;
   }
+
+  .content img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+
+
 
   .about-author {
     width: 100%;
