@@ -46,7 +46,7 @@ const BlogPostPage = () => {
             </p>
             <h1>{blogPost.title}</h1>
             <p>{blogPost.teaserContent}</p>
-            <b>By: Lorimer Jenkins {blogPost.date}</b>
+            <b>By Lorimer Jenkins, {blogPost.date}</b>
           </Styled.BlogHeader>
 
           <img className='blog-img' src={blogPost.blogImg} alt={blogPost.title} />
@@ -67,7 +67,7 @@ const BlogPostPage = () => {
               </a>
             </div>
             <p className='footer'>
-              Lorimer Jenkins is the founder of Othent, a project bringing traditional authentication over to Web3 to lower the barrier entry to dApps and create stronger authentication services for Web3.
+              Lorimer is the founder of Othent, a protocol bridging traditional authentication over to Web3 to lower the barrier entry to blockchains and create stronger authentication services for Web3.
             </p>
           </div>
         </Styled.BlogPost>
