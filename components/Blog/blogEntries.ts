@@ -68,7 +68,7 @@ Here's how it works:
 &nbsp;  
 ### Othent Smart Contract Transactions
 &nbsp;  
-When a user authenticates with their Web2 account, Othent assigns them a unique smart contract wallet. This wallet can only be accessed via a JWT, signed by their Web2 account. Transactions between smart contracts are secure and transparent, with Othent verifying their integrity and authenticity.
+When a user authenticates with their Web2 account, Othent assigns them a unique smart contract wallet. This smart contract wallet can only be accessed via a JWT, signed by their Web2 account, transactions can then be made on chain via the users smart contract wallet just like normal private key transactions.
 &nbsp;  
 &nbsp;  
 A key part of this approach is its flexibility, while a user initially uses their Web2 account for authentication, they can later choose to disconnect their Web2 account and use a private key with their smart contract wallet instead. This gives users the freedom to switch to more traditional blockchain interactions if they prefer, without sacrificing the benefits of Othent's authentication system.
