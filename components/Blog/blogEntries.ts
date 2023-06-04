@@ -21,7 +21,7 @@ Introducing Othent, a protocol bridging traditional authentication over to Web3 
 Othent pairs the convenience of Web2 login services like Google, Twitter, GitHub, and Microsoft with the power and security of dApps. It achieves this by generating unique RS-256 JSON Web Tokens (JWTs), which serve as fungible keys to individual smart contract wallets, enabling secure transactions with dApps.
 &nbsp;  
 &nbsp;  
-![othent gif](/blog/introducing-othent/othent-gif.png)
+![othent gif](/blog/introducing-othent/othent-gif.gif)
 
 &nbsp;  
 ## The Problem
