@@ -59,7 +59,7 @@ const BlogPostPage = () => {
                 <Styled.AuthorImg src="/lorimer.jpeg" alt="Lorimer Jenkins" />
                 <div className='right'>
                   <b>By Lorimer Jenkins</b>
-                  <p>Founder Othent</p>
+                  <p>building Othent</p>
                 </div>
               </div>
               <a href="https://twitter.com/lorimer_jenkins" target="_blank">
