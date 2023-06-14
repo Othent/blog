@@ -5,7 +5,7 @@ const blogEntries = [
     favicon: '/blog/introducing-othent/favicon.svg',
     blogImg: '/blog/introducing-othent/hero-img.png',
     category: 'Announcements',
-    date: '30th May 2023',
+    date: '14th June 2023',
     duration: '3 min read',
     title: 'Introducing Othent',
     transactionID: 'XXXXX',
@@ -18,7 +18,27 @@ Introducing Othent, a protocol bridging traditional authentication over to Web3 
 &nbsp;  
 &nbsp; 
 &nbsp; 
-Othent pairs the convenience of Web2 login services like Google, Twitter, GitHub, and Microsoft with the power and security of dApps. It achieves this by generating unique RS-256 JSON Web Tokens (JWTs), which serve as fungible keys to individual smart contract wallets, enabling secure transactions with dApps.
+Web3 has been a very tough thing for many companies/people to understand, early adopters curious about a new technology were able to quickly wrap their heads around tokens specifically with the help of things like centralized exchanges which then prompted users to experiment with dApps like Uniswap and projects like MetaMask.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+But not everyone gets the thrill or adrenaline from using dApps, humans are very conservative in their beliefs and often only want to use something depending on whether it improves their life instantaneously or not, for Web3 it currently doesn't.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+This has lead to a very closed off industry that has only had playful short lived hints of product market fit in the real world, there has always been a mentality of us and them (Web3 vs Web2). In my mind the smartest thing to do would be to break down the barrier of us and them and start highlighting the benefits of using blockchain to end users and companies so they want to use this technology rather than forcing them.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+But in order for that to happen we as a industry need to welcome the idea of not everyone is ready to jump straight in with hardcore decentralization, just like many of us weren't when we first bought Bitcoin on a dodgey exchange in 2018.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+Othent pairs the convenience of Web2 login services like Google, Twitter, GitHub, and Microsoft with the power and security of dApps. It achieves this by generating unique RS-256 JSON Web Tokens (JWTs), which serve as fungible keys to individual smart contract wallets, enabling secure transactions with dApps that anyone with a social media account can make.
 &nbsp;  
 &nbsp;  
 ![othent gif](/blog/introducing-othent/othent-gif.gif)
@@ -46,7 +66,7 @@ If someone else gets hold of your private key, it's like giving them complete an
 **Custodial private keys,** managed by a third party, require you to give control over your funds and trust in the custodian's security measures. 
 &nbsp;  
 &nbsp;  
-**Multi-Party Computation (MPC) private keys,** where multiple parties cooperate to manage the key, add complexity and potential for coordination failure.
+**Multi-Party Computation (MPC) private keys,** where multiple parties cooperate to manage the key, adding complexity and potential for coordination failure on early startups.
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -54,6 +74,12 @@ If someone else gets hold of your private key, it's like giving them complete an
 ## The solution
 &nbsp;  
 Othent offers a more accessible approach to blockchain transactions by leveraging Web2 login credentials and JWTs. 
+&nbsp;  
+&nbsp;  
+Many companies are already used to this widespread authentication technology and will have no problem integrating into their existing services. Enabling them instead of having to spend a year revamping their whole tech stack to support key storage and forcing their users to understand wallets.
+&nbsp;  
+&nbsp;  
+They can just simply connect to a Web3 dApp/chain/service and leverage it to improve their product/service instead of trying to change it.
 &nbsp;  
 &nbsp;  
 ![othent transaction flow](/blog/introducing-othent/othent-tx-flow.png)
