@@ -50,8 +50,7 @@ Othent pairs the convenience of Web2 login services like Google, Twitter, GitHub
 &nbsp;  
 Our authentication flow cuts out more than 50 steps compared to traditional wallets.  Users can quickly and securely log in and interact with dApps, which simplifies the process and encourages more people to use dApps.   
 &nbsp; 
-
-
+&nbsp;  
 &nbsp;  
 ## The Problem
 &nbsp;  
@@ -70,6 +69,8 @@ If someone else gets hold of your private key, it's like giving them complete an
 **Custodial private keys,** managed by a third party, require you to give control over your funds and trust in the custodian's security measures.  
 &nbsp;  
 **Multi-Party Computation (MPC) private keys,** where multiple parties cooperate to manage the key, adding complexity and potential for coordination failure on early startups.  
+&nbsp;  
+&nbsp;  
 &nbsp;  
 ## The solution
 &nbsp;  
@@ -113,6 +114,7 @@ Othent follows a similar philosophy: create a path for users to transition comfo
 &nbsp;  
 
 Othent's goal is to make blockchain technology more accessible to all. By simplifying the authentication process, we aim to encourage greater adoption of blockchain and inspire further innovation throughout the whole of the Web3 ecosystem.  
+&nbsp;  
 &nbsp;  
 &nbsp;  
 ## Get Started with Othent
