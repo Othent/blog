@@ -67,12 +67,9 @@ If someone else gets hold of your private key, it's like giving them complete an
 &nbsp;  
 **User managed private keys,** provide direct and complete control over your wallet and rely solely on the users own security measures.  
 &nbsp;  
-&nbsp;  
 **Custodial private keys,** managed by a third party, require you to give control over your funds and trust in the custodian's security measures.  
 &nbsp;  
-&nbsp;  
 **Multi-Party Computation (MPC) private keys,** where multiple parties cooperate to manage the key, adding complexity and potential for coordination failure on early startups.  
-&nbsp;  
 &nbsp;  
 ## The solution
 &nbsp;  
