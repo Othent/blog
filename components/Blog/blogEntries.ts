@@ -137,7 +137,7 @@ Developers interested in integrating Othent can find developer docs at [docs.oth
     date: '26th June 2023',
     duration: '5 min read',
     title: 'Manage Othent',
-    transactionID: '-',
+    transactionID: 'bnr7xCL6IdjafhSq2lBFVCcIEY6qwP6HRuyiFEdzjQE',
     teaserContent: 'Adoption of Web3 has been a very slow process, partly due to lack of developer infrastructure. But an even bigger problem no one really talks about has been the lack of authentication infrastructure.',
     content: `
 Adoption of Web3 has been a very slow process, partly due to lack of developer infrastructure. But an even bigger problem no one really talks about has been the lack of authentication infrastructure. 
