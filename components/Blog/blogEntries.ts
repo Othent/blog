@@ -120,9 +120,98 @@ Othent's goal is to make blockchain technology more accessible to all. By simpli
 ## Get Started with Othent
 &nbsp;  
 Developers interested in integrating Othent can find developer docs at [docs.othent.io](https://docs.othent.io). To create an Othent account, visit [othent.io/signup](https://othent.io/signup). For any inquiries or feedback, feel free to email us at hello@othent.io.
-`,
-
+`
   },
+
+
+
+
+
+
+  {
+    id: 2,
+    url: 'manage-othent',
+    favicon: '/blog/manage-othent/favicon.svg',
+    blogImg: '/blog/manage-othent/hero.png',
+    category: 'Features',
+    date: '26th June 2023',
+    duration: '5 min read',
+    title: 'Manage Othent',
+    transactionID: '-',
+    teaserContent: 'Adoption of Web3 has been a very slow process, partly due to lack of developer infrastructure. But an even bigger problem no one really talks about has been the lack of authentication infrastructure.',
+    content: `
+Adoption of Web3 has been a very slow process, partly due to lack of developer infrastructure. But an even bigger problem no one really talks about has been the lack of authentication infrastructure. 
+&nbsp;  
+&nbsp;  
+I personally define authentication infrastructure as things like:
+&nbsp;  
+&nbsp;  
+&nbsp;  
+- User management 
+- Easy to use CRM
+- SSO soloutions
+- Management APIs
+- Analytics on users/growth
+&nbsp;  
+
+&nbsp;  
+I strongly believe that just because a user is using a decentralized app shouldn't mean years of tooling already tried and tested is lost.
+
+
+&nbsp;  
+![Etherscan and Indexer](/blog/manage-othent/etherscan-indexer.png)
+&nbsp;  
+Many startups have tried to solve this problem by creating new advanced analytics tools like blockchain explorers and indexing APIs, which provide an extremely good overview of blockchains. 
+&nbsp;  
+&nbsp;  
+But this can be daunting to many companies, with the problem of too much data of the blockchain itself and not enough analytics on just how their dApp/service is performing.
+
+
+&nbsp;  
+![Etherscan and Indexer](/blog/manage-othent/get-the-data.png)
+&nbsp;  
+At Othent we are aiming to solve the daunting problem and make it extremely easy for any company to integrate solutions with authentication with what they already know and love.
+&nbsp;  
+&nbsp;  
+Manage.othent.io is a tool companies can now use with their dApp while using Othent to get the data they need to be able to instantly see their dApp at scale and how the users are progressing as a whole. 
+&nbsp;  
+&nbsp;  
+This is extremely important to both new and established companies to see how their product/service is performing with legacy and new features they offer.
+&nbsp;  
+&nbsp;  
+
+&nbsp;  
+![Etherscan and Othent](/blog/manage-othent/etherscan-othent.png)
+&nbsp;  
+
+
+Rather than spending hours on a blockchain explorer like etherscan we give you a comprehensive overview:
+&nbsp;  
+&nbsp;  
+&nbsp;  
+- Who are your users? We show you 
+- How many transactions do certain users make? We show you
+- Launched a new feature? We show you
+- What is your most popular service? We show you 
+- What are people not using? We show you 
+- What should you be spending more time on? We show you 
+
+
+&nbsp;  
+![Othent ecosystem](/blog/manage-othent/othent-ecosystem.png)
+&nbsp;  
+ 
+Othent is the glue between dApps and their users, whether it's authentication or user management, we want to be in the heart of your project and make it easy to scale your dApp to the people that love it.
+&nbsp;  
+&nbsp;  
+You can integrate our SDK right now at [docs.othent.io/developers/sdk](https://docs.othent.io/developers/sdk) and use [manage.othent.io](https://manage.othent.io) at no extra cost by signing into the dashboard with the same account your API ID is linked to!
+`
+  }
+
+
+
+
+
 ];
 
 export default blogEntries;

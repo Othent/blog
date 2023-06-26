@@ -27,6 +27,8 @@ const Blog = () => {
            onClick={() => setSelectedCategory('View All')}>View All</Styled.BlogMenuButton>
           <Styled.BlogMenuButton secondary={selectedCategory !== 'Announcements'}
            onClick={() => setSelectedCategory('Announcements')}>Announcements</Styled.BlogMenuButton>
+           <Styled.BlogMenuButton secondary={selectedCategory !== 'Features'}
+           onClick={() => setSelectedCategory('Features')}>Features</Styled.BlogMenuButton>
         </Styled.BlogMenu>
 
 
