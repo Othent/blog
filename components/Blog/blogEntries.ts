@@ -206,7 +206,91 @@ Othent is the glue between dApps and their users, whether it's authentication or
 &nbsp;  
 You can integrate our SDK right now at [docs.othent.io/developers/sdk](https://docs.othent.io/developers/sdk) and use [manage.othent.io](https://manage.othent.io) at no extra cost by signing into the dashboard with the same account your API ID is linked to!
 `
-  }
+},
+
+
+
+
+
+{
+  id: 3,
+  url: 'othent-mobile',
+  favicon: '/blog/othent-mobile/favicon.svg',
+  blogImg: '/blog/othent-mobile/hero.png',
+  category: 'Announcements',
+  date: '17th August 2023',
+  duration: '4 min read',
+  title: 'Othent Mobile',
+  transactionID: '',
+  teaserContent: 'Today we’re launching Othent Mobile - a simple way to use Arweave apps from your phone. We designed Othent Mobile for two reasons...',
+  content: `
+## Arweave in your pocket
+&nbsp;  
+Today we’re launching Othent Mobile - a simple way to use Arweave apps from your phone. We designed Othent Mobile for two reasons: 
+
+&nbsp;  
+
+- To make onboarding into the ecosystem frictionless on the most widely used platforms, mobile and Google.
+- To seamlessly enable Arweave apps on mobile without developers needing to make any modifications.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+![Othent mobile UI](/blog/othent-mobile/sample-UI.png)
+&nbsp; 
+## For users
+&nbsp; 
+
+Clicking links to apps like Alex or Permapages from your phone now just work. No more getting stuck on landing pages. No more pulling out your computer to transfer $U tokens or trade on the Universal Content Marketplace.
+
+&nbsp; 
+&nbsp; 
+
+
+Now, you can download Othent Mobile by going to [mobile.othent.io.](https://mobile.othent.io) Bam. You’re in.
+
+&nbsp; 
+&nbsp; 
+
+
+Once you have downloaded Othent Mobile, here are some things you can do on the Permaweb with your new powers:
+&nbsp; 
+&nbsp; 
+
+&nbsp; 
+- [Store an image permanently on Arweave](https://weavetransfer.com)
+&nbsp; 
+- [Publish a Permapage](https://permapages.app)
+&nbsp; 
+- [Contribute to an Alex Pool](https://alex.arweave.dev)
+&nbsp; 
+- [(For our new mobile degens), create a UDL Licensed Atomic Asset](https://img.arweave.dev)
+
+&nbsp; 
+
+Power your Arweave journey with Othent and claim free $U tokens for a limited time at [u.othent.io!](https://u.othent.io)
+
+&nbsp; 
+
+![ArConnect and Othent](/blog/othent-mobile/arconnect-othent.png)
+
+
+&nbsp; 
+## For developers
+
+&nbsp; 
+
+Starting today, your integration with ArConnect just became an integration for mobile devices. There’s nothing you need to do; it just works. Your users can now onboard through desktop with ArConnect or mobile with Othent. 
+
+&nbsp; 
+
+Our goal at Othent is to make Arweave accessible to the masses. We can’t wait to see what you do on the Permaweb through your phone!
+
+&nbsp; 
+
+To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.io](https://docs.arconnect.io)!
+`
+}
+
 
 
 
