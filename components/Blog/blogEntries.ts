@@ -221,7 +221,7 @@ You can integrate our SDK right now at [docs.othent.io/developers/sdk](https://d
   date: '17th August 2023',
   duration: '4 min read',
   title: 'Othent Mobile',
-  transactionID: '',
+  transactionID: 'xSwE3uV0A6vE3TKS-iAty5bbJ2LoHHqldnNDqyYegcM',
   teaserContent: 'Today we’re launching Othent Mobile - a simple way to use Arweave apps from your phone. We designed Othent Mobile for two reasons...',
   content: `
 ##### DISCLAIMER: Othent Mobile is in Beta. It is not recommended to use Othent Mobile as your main Arweave wallet at this time.
