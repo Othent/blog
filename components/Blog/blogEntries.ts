@@ -224,6 +224,9 @@ You can integrate our SDK right now at [docs.othent.io/developers/sdk](https://d
   transactionID: '',
   teaserContent: 'Today we’re launching Othent Mobile - a simple way to use Arweave apps from your phone. We designed Othent Mobile for two reasons...',
   content: `
+##### DISCLAIMER: THIS IS A BETA RELEASE, PLEASE DO NOT FUND YOUR ACCOUNT WITH NFT'S/TOKENS
+
+&nbsp;  
 ## Arweave in your pocket
 &nbsp;  
 Today we’re launching Othent Mobile - a simple way to use Arweave apps from your phone. We designed Othent Mobile for two reasons: 
@@ -246,7 +249,7 @@ Clicking links to apps like Alex or Permapages from your phone now just work. No
 &nbsp; 
 
 
-Now, you can download Othent Mobile by going to [mobile.othent.io.](https://mobile.othent.io) Bam. You’re in.
+Now, you can download Othent Mobile by going to [mobile.othent.io.](https://mobile.othent.io/?utm_source=Othent+Blog&utm_medium=Post&utm_campaign=Othent+Mobile+Launch+-+Download&utm_id=Othent+Mobile+Launch) Bam. You’re in.
 
 &nbsp; 
 &nbsp; 
@@ -257,7 +260,7 @@ Once you have downloaded Othent Mobile, here are some things you can do on the P
 &nbsp; 
 
 &nbsp; 
-- [Store an image permanently on Arweave](https://weavetransfer.com)
+- [Store an image permanently on Arweave](https://weavetransfer.othent.io/?utm_source=Othent+Blog&utm_medium=Post&utm_campaign=Othent+Mobile+Launch+-+Download&utm_id=Othent+Mobile+Launch)
 &nbsp; 
 - [Publish a Permapage](https://permapages.app)
 &nbsp; 
@@ -267,7 +270,7 @@ Once you have downloaded Othent Mobile, here are some things you can do on the P
 
 &nbsp; 
 
-Power your Arweave journey with Othent and claim free $U tokens for a limited time at [u.othent.io!](https://u.othent.io)
+Power your Arweave journey with Othent and claim free $U tokens for a limited time at [u.othent.io!](https://u.othent.io/?utm_source=Othent+Blog&utm_medium=Post&utm_campaign=Othent+Mobile+Launch+-+U+Faucet&utm_id=Othent+Mobile+Launch)
 
 &nbsp; 
 
@@ -287,7 +290,7 @@ Our goal at Othent is to make Arweave accessible to the masses. We can’t wait 
 
 &nbsp; 
 
-To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.io](https://docs.arconnect.io)!
+To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.io](https://docs.arconnect.io/?utm_source=Othent+Blog&utm_medium=Post&utm_campaign=Othent+Mobile+Launch+-+U+Faucet&utm_id=Othent+Mobile+Launch)!
 `
 }
 
