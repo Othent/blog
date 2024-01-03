@@ -75,7 +75,7 @@ const BlogPostPage = () => {
         <p>Blog post not found.</p>
       )}
 
-      {randomBlogPosts.length === 3 && (
+      {/* {randomBlogPosts.length === 3 && (
         <Styled.RecommendedBlogs>
           {randomBlogPosts.map((blogPost) => (
             <Styled.SubsectionBlog key={blogPost.id}>
@@ -94,7 +94,7 @@ const BlogPostPage = () => {
             </Styled.SubsectionBlog>
           ))}
         </Styled.RecommendedBlogs>
-      )}
+      )} */}
     </Styled.MainWrapper>
   );
 };
