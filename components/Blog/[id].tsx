@@ -75,11 +75,11 @@ const BlogPostPage = () => {
         <p>Blog post not found.</p>
       )}
 
-      {randomBlogPosts.length === 3 && (
+      {/* {randomBlogPosts.length === 3 && (
         <Styled.RecommendedBlogs>
           {randomBlogPosts.map((blogPost) => (
             <Styled.SubsectionBlog key={blogPost.id}>
-              <img src={blogPost.image} alt="othent hero image" />
+              <img src={blogPost.favicon} alt="othent hero image" />
               <Styled.SubBlogContent>
                 <div className='header-content'>
                   <p className='category'>{blogPost.category}</p>
@@ -94,7 +94,7 @@ const BlogPostPage = () => {
             </Styled.SubsectionBlog>
           ))}
         </Styled.RecommendedBlogs>
-      )}
+      )} */}
     </Styled.MainWrapper>
   );
 };
