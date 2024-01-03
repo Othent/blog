@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import * as Styled from './styles';
 import blogEntries from './blogEntries';
@@ -8,8 +8,7 @@ import rehypeRaw from "rehype-raw";
 
 const BlogPostPage = () => {
   const router = useRouter();
-  const url = router.query.id;
-  const blogPost = blogEntries.find((entry) => entry.url === url);
+  const [randomBlogPosts, setRandomBlogPosts] = useState([]);
 
   const getRandomBlogPosts = () => {
     const randomBlogPosts = [];
@@ -17,17 +16,18 @@ const BlogPostPage = () => {
     while (randomBlogPosts.length < 3 && totalPosts >= 4) {
       const randomIndex = Math.floor(Math.random() * totalPosts);
       const randomPost = blogEntries[randomIndex];
-      if (
-        !randomBlogPosts.includes(randomPost) &&
-        randomPost.url !== url
-      ) {
+      if (!randomBlogPosts.includes(randomPost) && randomPost.url !== router.query.id) {
         randomBlogPosts.push(randomPost);
       }
     }
     return randomBlogPosts;
   };
 
-  const randomBlogPosts = getRandomBlogPosts();
+  useEffect(() => {
+    setRandomBlogPosts(getRandomBlogPosts());
+  }, [router.query.id]);
+
+  const blogPost = blogEntries.find((entry) => entry.url === router.query.id);
 
   return (
     <Styled.MainWrapper>

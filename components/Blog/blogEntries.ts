@@ -292,6 +292,77 @@ Our goal at Othent is to make Arweave accessible to the masses. We can’t wait 
 
 To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.io](https://docs.arconnect.io/?utm_source=Othent+Blog&utm_medium=Post&utm_campaign=Othent+Mobile+Launch+-+U+Faucet&utm_id=Othent+Mobile+Launch)!
 `
+},
+
+
+
+{
+  id: 4,
+  url: 'othent-2',
+  favicon: '/blog/othent-2/favicon.svg',
+  blogImg: '/blog/othent-2/hero.png',
+  category: 'Announcements',
+  date: '3rd January 2024',
+  duration: '3 min read',
+  title: 'Othent 2.0',
+  transactionID: '8E-fVncYFtatdENudVYPSHVJxomCPsRDgXEALGUyt3A',
+  teaserContent: 'Today we are excited to announce our new super fast, Arweave onboarding authentication system with new much requested indexing capabilities...',
+  content: `Today we are excited to announce our new super fast, Arweave onboarding authentication system with new much requested indexing capabilities.
+  
+&nbsp; 
+
+TLDR; our new SDK enables:
+
+&nbsp; 
+
+  - Speeds up the signing process by 700% from 8 seconds to 1!
+  - Data indexing via existing, widely used ecosystem tagging methods that were previously unavailable to Othent users!
+  - Projects with ArConnect support can easily integrate with one line of code
+  - Extended signing functionality through leveraging JWKs instead of Smart Contracts
+
+&nbsp;
+
+![Increasing Arweave's TAM](/blog/othent-2/tam.png)
+
+&nbsp; 
+
+Web3 onboarding is one of the most overlooked challenges teams face when creating new projects. Projects immediately cut out the majority of their potential user base when only making their dApp accessible via traditional browser based wallets.
+
+&nbsp; 
+
+This turns into a complicated UX for anyone outside of our ecosystem as well as gives projects a disadvantage from the get-go.
+
+&nbsp; 
+
+We’ve been listening to the feedback you all provided us with the initial release of Othent. Othent 2.0 solves for the following previous integration bottlenecks:
+
+&nbsp; 
+
+  - Now unlimited transaction signing functionality (+ encryption!)
+  - New standard to query Othent-based transactions
+  - The ability for Othent accounts to make L1 transactions
+  - Integration process down from 8 lines of code to 1.
+
+&nbsp; 
+
+Interested in trying it out? 
+
+&nbsp; 
+
+Users can create an account using our new Othent 2.0 system on Othent.io right now!
+
+&nbsp; 
+
+Developers get started by downloading the SDK today from https://www.npmjs.com/package/@othent/kms  
+
+&nbsp; 
+
+Hop in our Discord for any questions, feedback, or integration support https://discord.gg/Cxmn3mpKV9!
+
+&nbsp; 
+
+Happy Building!
+`
 }
 
 
