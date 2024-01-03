@@ -306,8 +306,8 @@ To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.i
   duration: '3 min read',
   title: 'Othent 2.0',
   transactionID: '8E-fVncYFtatdENudVYPSHVJxomCPsRDgXEALGUyt3A',
-  teaserContent: 'Today we are excited to announce our new super fast, Arweave onboarding authentication system with new much requested indexing capabilities...',
-  content: `Today we are excited to announce our new super fast, Arweave onboarding authentication system with new much requested indexing capabilities.
+  teaserContent: 'Today we are excited to announce our completely redesigned Arweave onboarding solution...',
+  content: `Today we are excited to announce our completely redesigned Arweave onboarding solution.
   
 &nbsp; 
 
@@ -315,10 +315,11 @@ TLDR; our new SDK enables:
 
 &nbsp; 
 
-  - Speeds up the signing process by 700% from 8 seconds to 1!
-  - Data indexing via existing, widely used ecosystem tagging methods that were previously unavailable to Othent users!
-  - Projects with ArConnect support can easily integrate with one line of code
-  - Extended signing functionality through leveraging JWKs instead of Smart Contracts
+  - 700% improvement on signing speeds from 8 seconds to 1!
+  - Data indexing via existing Arweave gateway standards
+  - One line of code to integrate for projects with ArConnect support
+  - Extended signing functionality through leveraging Arweave-native private keys
+  
 
 &nbsp;
 
@@ -330,7 +331,7 @@ Web3 onboarding is one of the most overlooked challenges teams face when creatin
 
 &nbsp; 
 
-This turns into a complicated UX for anyone outside of our ecosystem as well as gives projects a disadvantage from the get-go.
+This turns into a complicated UX for anyone outside of our ecosystem and gives projects a disadvantage from the get-go.
 
 &nbsp; 
 
@@ -338,10 +339,10 @@ We’ve been listening to the feedback you all provided us with the initial rele
 
 &nbsp; 
 
-  - Now unlimited transaction signing functionality (+ encryption!)
+  - Now limitless transaction signing functionality (+ encryption!)
   - New standard to query Othent-based transactions
   - The ability for Othent accounts to make L1 transactions
-  - Integration process down from 8 lines of code to 1.
+  - Integration process down from 8 lines of code to 1
 
 &nbsp; 
 
@@ -349,15 +350,15 @@ Interested in trying it out?
 
 &nbsp; 
 
-Users can create an account using our new Othent 2.0 system on Othent.io right now!
+Users can create an account using Othent 2.0 on Othent.io right now!
 
 &nbsp; 
 
-Developers get started by downloading the SDK today from https://www.npmjs.com/package/@othent/kms  
+Developers get started by downloading the SDK today from [https://www.npmjs.com/package/@othent/kms](https://www.npmjs.com/package/@othent/kms)
 
 &nbsp; 
 
-Hop in our Discord for any questions, feedback, or integration support https://discord.gg/Cxmn3mpKV9!
+Hop in our Discord for any questions, feedback, or integration support [https://discord.gg/Cxmn3mpKV9](https://discord.gg/Cxmn3mpKV9)!
 
 &nbsp; 
 
