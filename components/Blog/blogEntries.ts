@@ -338,7 +338,7 @@ However, due to Othent's technical architecture, there were limitations that pre
 &nbsp;  
 &nbsp; 
 &nbsp; 
-<video controls width="600">
+<video controls width="100%">
         <source
             src="/blog/othent-deprecation/othent_migration.mp4"
             type="video/mp4">
