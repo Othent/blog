@@ -390,6 +390,12 @@ However, due to Othent's technical architecture, there were limitations that pre
 &nbsp;  
 &nbsp; 
 &nbsp; 
+*_If you haven't created a Bazar profile yet, please create one before starting the transfer process above_
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+<br/>
 Once all assets have been successfully transferred off of Othent, no further action is required.
 &nbsp;  
 &nbsp;  
@@ -407,11 +413,6 @@ Thank you again for being part of the Othent journey.
 &nbsp; 
 Sincerely,
 The Othent Team
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
-*_If you haven't created a Bazar profile yet, please create one before starting the transfer process above_
 `
 },
 
