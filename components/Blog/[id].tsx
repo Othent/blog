@@ -38,12 +38,12 @@ const BlogPostPage = () => {
               <p className='category'>{blogPost.category}</p>
               <p>{blogPost.duration}</p>
             </div>
-            <p>
+            {blogPost.transactionID && <p>
               Arweave tx ID: 
               <a href={'https://arweave.net/' + blogPost.transactionID} target='_blank' rel='noopener noreferrer' style={{ color: '#2375EF' }}>
                 {' ' + blogPost.transactionID}
               </a>
-            </p>
+            </p>}
             <h1>{blogPost.title}</h1>
             <p>{blogPost.teaserContent}</p>
             <b>By Lorimer Jenkins, {blogPost.date}</b>

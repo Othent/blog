@@ -297,6 +297,125 @@ To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.i
 
 
 {
+  id: 5,
+  url: 'othent-deprecation',
+  favicon: '/blog/othent-deprecation/favicon.svg',
+  blogImg: '/blog/othent-deprecation/hero-img-3.png',
+  category: 'Announcements',
+  date: '13th October 2025',
+  duration: '8 min read',
+  title: 'Othent is being deprecated',
+  transactionID: '',
+  teaserContent: 'Learn what you need to do before Othent shuts down on Jan 1, 2026. Instructions and walkthrough on how to transfer your assets to a new wallet.',
+  content: `
+To all Othent users and partners,
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+First and most importantly, the Othent team has been humbled by all the users and applications that have created an Othent account or integrated Othent in their application. The Othent team truly appreciates every one of you that have used and supported Othent. Thank you!
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+Othent started as an alternative authentication solution for the Arweave ecosystem. Othent's goal was to give users familiar single sign in options so they could use it to manage their Arweave and AO assets. Othent succeeded at this task.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+However, due to Othent's technical architecture, there were limitations that prevented Othent from being able to evolve into its full vision. From these limitations, [Wander Connect](https://www.wander.app/connect) was created as a new, improved authentication system with more single sign on options, passwordless account creation, and more.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+**Unfortunately, this means Othent will be shutting down on January 1, 2026**. On this date, Othent accounts will no longer be accessible. To ensure you do not lose access to your assets, please transfer them to a new wallet before the shutdown. Instructions and a walkthrough video on how to transfer your assets are below
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+#### How to migrate your Arweave and AO tokens
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+<video controls width="600">
+        <source
+            src="/blog/othent-deprecation/othent_migration.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+1. Obtain new Arweave / AO wallet and address. We recommend Wander Connect
+2. Go to Othent.io
+3. Click on the "Transfer Assets" button
+4. On the next screen, click the "Connect Wallet" button
+5. Connect your Othent account
+6. Once your Othent Wallet is connected, verified* Arweave and AO tokens held in your wallet will appear on the screen
+7. Click on an asset you want to transfer to your new wallet
+8. In the "Recipient address" field, enter the address of your new Arweave / AO wallet
+9. Click the "Send" button
+10. Done. Your asset has been transferred to your new wallet
+11. Repeat steps 6-9 for any remaining assets in your Othent account
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+*_Any custom or non-verified tokens will need to be manually added in order to be transferred_
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+#### How to transfer Bazar collectibles
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+1. Obtain new Arweave / AO wallet and address. We recommend [Wander Connect](https://www.wander.app/connect)
+2. Go to [https://bazar.arweave.net/](https://bazar.arweave.net/)
+3. Click the connect wallet button in the upper right hand corner
+4. Select "Othent" from the list of wallets
+5. If necessary, sign into your Othent account
+6. Click on the Head icon on the upper right corner
+7. On the pop out side bar, select your profile name or address to go to your Bazar user profile*
+8. In your user profile, select a Collectible in your asset list you want to transfer
+9. On the asset screen, click the Transfer button near the top
+10. In the Asset Quantify field, enter in the number of Collectibles for the asset you want to transfer
+11. In the Recipient field, put your new Arweave / AO Wallet address
+12. Click the Transfer button
+13. Repeat steps 6 - 11 if you have multiple Collectibles on Bazar
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+Once all assets have been successfully transferred off of Othent, no further action is required.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+If you have any questions or run into issues, please reach out to the team in the Othent channel in the Community Labs discord.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+Thank you again for being part of the Othent journey.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+Sincerely,
+The Othent Team
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+*_If you haven't created a Bazar profile yet, please create one before starting the transfer process above_
+`
+},
+
+{
   id: 4,
   url: 'othent-2',
   favicon: '/blog/othent-2/favicon.svg',
@@ -335,7 +454,7 @@ This turns into a complicated UX for anyone outside of our ecosystem and gives p
 
 &nbsp; 
 
-We’ve been listening to the feedback you all provided us with the initial release of Othent. Othent 2.0 solves for the following previous integration bottlenecks:
+We've been listening to the feedback you all provided us with the initial release of Othent. Othent 2.0 solves for the following previous integration bottlenecks:
 
 &nbsp; 
 
