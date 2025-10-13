@@ -46,7 +46,7 @@ const BlogPostPage = () => {
             </p>}
             <h1>{blogPost.title}</h1>
             <p>{blogPost.teaserContent}</p>
-            <b>By Lorimer Jenkins, {blogPost.date}</b>
+            <b>By {blogPost.id === 5 ? 'The Othent Team' : 'Lorimer Jenkins'}, {blogPost.date}</b>
           </Styled.BlogHeader>
 
           <img className='blog-img' src={blogPost.blogImg} alt={blogPost.title} />
@@ -56,19 +56,19 @@ const BlogPostPage = () => {
           <div className='about-author'>
             <div className='header'>
               <div className='left'>
-                <Styled.AuthorImg src="/lorimer.jpeg" alt="Lorimer Jenkins" />
+                <Styled.AuthorImg src={blogPost.id === 5 ? "/logo-2.svg" : "/lorimer.jpeg"} alt={blogPost.id === 5 ? "The Othent Team" : "Lorimer Jenkins"} />
                 <div className='right'>
-                  <b>By Lorimer Jenkins</b>
+                  <b>By {blogPost.id === 5 ? 'The Othent Team' : 'Lorimer Jenkins'}</b>
                   <p>building Othent</p>
                 </div>
               </div>
-              <a href="https://twitter.com/lorimer_jenkins" target="_blank">
+              <a href={blogPost.id === 5 ? "https://twitter.com/keysarentsimple" : "https://twitter.com/lorimer_jenkins"} target="_blank">
                 <Styled.AuthorTwitter src="/twitter.png" alt="Twitter" />
               </a>
             </div>
-            <p className='footer'>
+            {blogPost.id !== 5 && <p className='footer'>
               Lorimer is the founder of Othent, a protocol bridging traditional authentication over to Web3 to lower the barrier entry to blockchains and create stronger authentication services for Web3.
-            </p>
+            </p>}
           </div>
         </Styled.BlogPost>
       ) : (
