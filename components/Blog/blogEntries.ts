@@ -393,14 +393,9 @@ However, due to Othent's technical architecture, there were limitations that pre
 *_If you haven't created a Bazar profile yet, please create one before starting the transfer process above_
 &nbsp;  
 &nbsp;  
-&nbsp; 
-&nbsp; 
+&nbsp;  
 <br/>
-Once all assets have been successfully transferred off of Othent, no further action is required.
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+Once all assets have been successfully transferred off of Othent, no further action is required. 
 &nbsp;  
 &nbsp;  
 &nbsp; 
@@ -414,12 +409,22 @@ If you have any questions or run into issues, please reach out to the team in th
 &nbsp;  
 &nbsp;  
 &nbsp;
-For Developers and Applications who currently have Othent integrated, we recommend Wander Connect as an replace.  Wander Connect has the same SSO options as Othent along with other sign up / in options like email & password and passwordless.  The docs for Wander Connect can be found [here](https://docs.wander.app/wander-connect/intro).  There is also the other suite of Wander products that can be used as a replacement for Othent as well.  All the available options can be found on the Wander website at [Wander.app](https://wander.app).
+For Developers and Applications who currently have Othent integrated, we recommend Wander Connect as a replacement.  Wander Connect has the same SSO options as Othent along with other sign up / in options like email & password and passwordless.  The docs for Wander Connect can be found [here](https://docs.wander.app/wander-connect/intro).  
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp;
+There is also the other solutions in the suite of Wander products that can be used as a replacement for Othent as well.  All the available options can be found on the Wander website at [Wander.app](https://wander.app).
 &nbsp;  
 &nbsp;  
 &nbsp; 
 &nbsp; 
-Thank you again for being part of the Othent journey.
+Lastly, if you are using Arweave Wallet Kit, you can easily remove Othent as an option by just removing the Othent Strategy from your Arweave Wallet Kit integration.  You can learn more about how to customize your Arweave Wallet Kit strategies [here](https://docs.arweavekit.com/).
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp;
+Thank you everyone again for being part of the Othent journey.
 &nbsp;  
 &nbsp;  
 &nbsp; 
