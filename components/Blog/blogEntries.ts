@@ -401,7 +401,20 @@ Once all assets have been successfully transferred off of Othent, no further act
 &nbsp;  
 &nbsp; 
 &nbsp; 
-If you have any questions or run into issues, please reach out to the team in the Othent channel in the Community Labs discord.
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp;
+If you have any questions or run into issues, please reach out to the team in the Othent channel in the [Community Labs discord](https://discord.gg/UcvaCvSv5Y).
+&nbsp;  
+&nbsp;  
+&nbsp; 
+&nbsp; 
+#### Developer / Application Migration
+&nbsp;  
+&nbsp;  
+&nbsp;
+For Developers and Applications who currently have Othent integrated, we recommend Wander Connect as an replace.  Wander Connect has the same SSO options as Othent along with other sign up / in options like email & password and passwordless.  The docs for Wander Connect can be found [here](https://docs.wander.app/wander-connect/intro).  There is also the other suite of Wander products that can be used as a replacement for Othent as well.  All the available options can be found on the Wander website at [Wander.app](https://wander.app).
 &nbsp;  
 &nbsp;  
 &nbsp; 
