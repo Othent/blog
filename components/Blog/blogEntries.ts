@@ -309,45 +309,38 @@ To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.i
   teaserContent: 'Learn what you need to do before Othent shuts down on Jan 1, 2026. Instructions and walkthrough on how to transfer your assets to a new wallet.',
   content: `
 To all Othent users and partners,
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 First and most importantly, the Othent team has been humbled by all the users and applications that have created an Othent account or integrated Othent in their application. The Othent team truly appreciates every one of you that have used and supported Othent. Thank you!
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 Othent started as an alternative authentication solution for the Arweave ecosystem. Othent's goal was to give users familiar single sign in options so they could use it to manage their Arweave and AO assets. Othent succeeded at this task.
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 However, due to Othent's technical architecture, there were limitations that prevented Othent from being able to evolve into its full vision. From these limitations, [Wander Connect](https://www.wander.app/connect) was created as a new, improved authentication system with more single sign on options, passwordless account creation, and more.
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 **Unfortunately, this means Othent will be shutting down on January 1, 2026**. On this date, Othent accounts will no longer be accessible. To ensure you do not lose access to your assets, please transfer them to a new wallet before the shutdown. Instructions and a walkthrough video on how to transfer your assets are below
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 #### How to migrate your Arweave and AO tokens
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 <video controls width="100%">
         <source
             src="/blog/othent-deprecation/othent_migration.mp4"
             type="video/mp4">
         Your browser does not support the video tag.
     </video>
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 1. Obtain new Arweave / AO wallet and address. We recommend Wander Connect
 2. Go to Othent.io
 3. Click on the "Transfer Assets" button
@@ -359,20 +352,17 @@ However, due to Othent's technical architecture, there were limitations that pre
 9. Click the "Send" button
 10. Done. Your asset has been transferred to your new wallet
 11. Repeat steps 6-9 for any remaining assets in your Othent account
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 *_Any custom or non-verified tokens will need to be manually added in order to be transferred_
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 #### How to transfer Bazar collectibles
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 1. Obtain new Arweave / AO wallet and address. We recommend [Wander Connect](https://www.wander.app/connect)
 2. Go to [https://bazar.arweave.net/](https://bazar.arweave.net/)
 3. Click the connect wallet button in the upper right hand corner
@@ -386,31 +376,41 @@ However, due to Othent's technical architecture, there were limitations that pre
 11. In the Recipient field, put your new Arweave / AO Wallet address
 12. Click the Transfer button
 13. Repeat steps 6 - 11 if you have multiple Collectibles on Bazar
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
 *_If you haven't created a Bazar profile yet, please create one before starting the transfer process above_
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
-<br/>
-Once all assets have been successfully transferred off of Othent, no further action is required.
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
-If you have any questions or run into issues, please reach out to the team in the Othent channel in the Community Labs discord.
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
-Thank you again for being part of the Othent journey.
-&nbsp;  
-&nbsp;  
-&nbsp; 
-&nbsp; 
+
+&nbsp;
+
+Once all assets have been successfully transferred off of Othent, no further action is required. 
+
+&nbsp;
+
+If you have any questions or run into issues, please reach out to the team in the Othent channel in the [Community Labs discord](https://discord.gg/UcvaCvSv5Y).
+
+&nbsp;
+
+#### Developer / Application Migration
+
+&nbsp;
+
+For Developers and Applications who currently have Othent integrated, we recommend Wander Connect as a replacement.  Wander Connect has the same SSO options as Othent along with other sign up / in options like email & password and passwordless.  The docs for Wander Connect can be found [here](https://docs.wander.app/wander-connect/intro).  
+
+&nbsp;
+
+There is also the other solutions in the suite of Wander products that can be used as a replacement for Othent as well.  All the available options can be found on the Wander website at [Wander.app](https://wander.app).
+
+&nbsp;
+
+Lastly, if you are using Arweave Wallet Kit, you can easily remove Othent as an option by just removing the Othent Strategy from your Arweave Wallet Kit integration.  You can learn more about how to customize your Arweave Wallet Kit strategies [here](https://docs.arweavekit.com/).
+
+&nbsp;
+
+Thank you everyone again for being part of the Othent journey.
+
+&nbsp;
+
 Sincerely,
 The Othent Team
 `
