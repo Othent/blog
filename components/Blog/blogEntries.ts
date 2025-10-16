@@ -308,6 +308,19 @@ To integrate Othent Mobile, refer to the the ArConnect docs at [docs.arconnect.i
   transactionID: '',
   teaserContent: 'Learn what you need to do before Othent shuts down on Jan 1, 2026. Instructions and walkthrough on how to transfer your assets to a new wallet.',
   content: `
+<style>
+  .link {
+    color: #2375EF;
+    font-weight: 600;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  .link:visited {
+    color: #457AC9;
+  }
+</style>
+
 To all Othent users and partners,
 
 &nbsp;
@@ -320,7 +333,7 @@ Othent started as an alternative authentication solution for the Arweave ecosyst
 
 &nbsp;
 
-However, due to Othent's technical architecture, there were limitations that prevented Othent from being able to evolve into its full vision. From these limitations, [Wander Connect](https://www.wander.app/connect) was created as a new, improved authentication system with more single sign on options, passwordless account creation, and more.
+However, due to Othent's technical architecture, there were limitations that prevented Othent from being able to evolve into its full vision. From these limitations, <a href="https://www.wander.app/connect" target="_blank" class="link">Wander Connect</a> was created as a new, improved authentication system with more single sign on options, passwordless account creation, and more.
 
 &nbsp;
 
@@ -341,8 +354,8 @@ However, due to Othent's technical architecture, there were limitations that pre
 
 &nbsp;
 
-1. Obtain new Arweave / AO wallet and address. We recommend Wander Connect
-2. Go to Othent.io
+1. Obtain new Arweave / AO wallet and address. We recommend <a href="https://www.wander.app/connect" target="_blank" class="link">Wander Connect</a>
+2. Go to <a href="https://othent.io" target="_blank" class="link">Othent.io</a>
 3. Click on the "Transfer Assets" button
 4. On the next screen, click the "Connect Wallet" button
 5. Connect your Othent account
@@ -363,8 +376,8 @@ However, due to Othent's technical architecture, there were limitations that pre
 
 &nbsp;
 
-1. Obtain new Arweave / AO wallet and address. We recommend [Wander Connect](https://www.wander.app/connect)
-2. Go to [https://bazar.arweave.net/](https://bazar.arweave.net/)
+1. Obtain new Arweave / AO wallet and address. We recommend <a href="https://www.wander.app/connect" target="_blank" class="link">Wander Connect</a>
+2. Go to <a href="https://bazar.arweave.net/" target="_blank" class="link">https://bazar.arweave.net/</a>
 3. Click the connect wallet button in the upper right hand corner
 4. Select "Othent" from the list of wallets
 5. If necessary, sign into your Othent account
@@ -395,15 +408,15 @@ If you have any questions or run into issues, please reach out to the team in th
 
 &nbsp;
 
-For Developers and Applications who currently have Othent integrated, we recommend Wander Connect as a replacement.  Wander Connect has the same SSO options as Othent along with other sign up / in options like email & password and passwordless.  The docs for Wander Connect can be found [here](https://docs.wander.app/wander-connect/intro).  
+For Developers and Applications who currently have Othent integrated, we recommend <a href="https://www.wander.app/connect" target="_blank" class="link">Wander Connect</a> as a replacement.  Wander Connect has the same SSO options as Othent along with other sign up / in options like email & password and passwordless.  The docs for Wander Connect can be found <a href="https://docs.wander.app/wander-connect/intro" target="_blank" class="link">here</a>.  
 
 &nbsp;
 
-There is also the other solutions in the suite of Wander products that can be used as a replacement for Othent as well.  All the available options can be found on the Wander website at [Wander.app](https://wander.app).
+There is also the other solutions in the suite of Wander products that can be used as a replacement for Othent as well.  All the available options can be found on the Wander website at <a href="https://wander.app" target="_blank" class="link">Wander.app</a>.
 
 &nbsp;
 
-Lastly, if you are using Arweave Wallet Kit, you can easily remove Othent as an option by just removing the Othent Strategy from your Arweave Wallet Kit integration.  You can learn more about how to customize your Arweave Wallet Kit strategies [here](https://docs.arweavekit.com/).
+Lastly, if you are using Arweave Wallet Kit, you can easily remove Othent as an option by just removing the Othent Strategy from your Arweave Wallet Kit integration.  You can learn more about how to customize your Arweave Wallet Kit strategies <a href="https://docs.arweavekit.com/" target="_blank" class="link">here</a>.
 
 &nbsp;
 
